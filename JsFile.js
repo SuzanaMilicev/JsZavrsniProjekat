@@ -12,7 +12,7 @@ const end4 = document.getElementById("end-4");
 const end5 = document.getElementById("end-5");
 
 function nextPage(event) {
-    var firstname = document.getElementById("firstname").value;
+    let firstname = document.getElementById("firstname").value;
     switch (event) {
         case 'next1':
             start.style.display = "none";
@@ -55,30 +55,31 @@ function inputPopUp(x) {
 function finalPage() {
     let mark = document.getElementById("customRange1").value;
     let span1 = document.getElementsByClassName("span1");
+    let firstname = document.getElementById("firstname").value;
 
     if (mark >= 0 && mark <= 20) {
         q5.style.display = "none";
-        span1.innerText = firstname;
+        span1[0].innerHTML = firstname;
         end1.style.display = "block";
     }
     else if (mark > 20 && mark <= 40) {
         q5.style.display = "none";
-        span1.innerHTML = firstname;
+        span1[1].innerHTML = firstname;
         end2.style.display = "block";
     }
     else if (mark > 40 && mark <= 60) {
         q5.style.display = "none";
-        span1.innerHTML = firstname;
+        span1[2].innerHTML = firstname;
         end3.style.display = "block";
     }
     else if (mark > 60 && mark <= 80) {
         q5.style.display = "none";
-        span1.innerHTML = firstname;
+        span1[3].innerHTML = firstname;
         end4.style.display = "block";
     }
     else {
         q5.style.display = "none";
-        span1.innerHTML = firstname;
+        span1[4].innerHTML = firstname;
         end5.style.display = "block";
     }
 }
