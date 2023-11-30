@@ -57,29 +57,31 @@ function finalPage() {
     let span1 = document.getElementsByClassName("span1");
     let firstname = document.getElementById("firstname").value;
 
-    if (mark >= 0 && mark <= 20) {
-        q5.style.display = "none";
-        span1[0].innerHTML = firstname;
-        end1.style.display = "block";
-    }
-    else if (mark > 20 && mark <= 40) {
-        q5.style.display = "none";
-        span1[1].innerHTML = firstname;
-        end2.style.display = "block";
-    }
-    else if (mark > 40 && mark <= 60) {
-        q5.style.display = "none";
-        span1[2].innerHTML = firstname;
-        end3.style.display = "block";
-    }
-    else if (mark > 60 && mark <= 80) {
-        q5.style.display = "none";
-        span1[3].innerHTML = firstname;
-        end4.style.display = "block";
-    }
-    else {
-        q5.style.display = "none";
-        span1[4].innerHTML = firstname;
-        end5.style.display = "block";
+    switch (mark) {
+        case '1':
+            q5.style.display = "none";
+            span1[0].innerHTML = firstname;
+            end1.style.display = "block";
+            break;
+        case '2':
+            q5.style.display = "none";
+            span1[1].innerHTML = firstname;
+            end2.style.display = "block";
+            break;
+        case '3':
+            q5.style.display = "none";
+            span1[2].innerHTML = firstname;
+            end3.style.display = "block";
+            break;
+        case '4':
+            q5.style.display = "none";
+            span1[3].innerHTML = firstname;
+            end4.style.display = "block";
+            break;
+        default:
+            q5.style.display = "none";
+            span1[4].innerHTML = firstname;
+            end5.style.display = "block";
+            break;
     }
 }
