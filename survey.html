@@ -50,7 +50,7 @@
                 <h3><em>Portfolio</em></h3>
                 <h2>WONDERING IF TECH IS RIGHT FOR YOU?</h2>
                 <p>Take this 3-minute survey and find out.</p>
-                <button class="btn btn-dark" onclick="nextPage('next1')">START</button>
+                <button class="btn btn-dark" onclick="nextPage('next1')" type="button">START</button>
             </div>
 
             <div id="q1">
@@ -62,7 +62,7 @@
                         placeholder="Type your answer here..." name="fname">
                     <label for="floatingInput1">Type your answer here...</label>
                 </form>
-                <button class="btn btn-dark" onclick="nextPage('next2')">NEXT</button>
+                <button class="btn btn-dark" onclick="nextPage('next2')" type="button">NEXT</button>
             </div>
 
             <div id="q2">
@@ -106,7 +106,7 @@
                         placeholder="Type your answer here...">
                     <label for="floatingInput2">Type your answer here...</label>
                 </div>
-                <button class="btn btn-dark" onclick="nextPage('next3')">NEXT</button>
+                <button class="btn btn-dark" onclick="nextPage('next3')" type="button">NEXT</button>
             </div>
 
             <div id="q3">
@@ -142,7 +142,7 @@
                     <label class="form-check-label" for="RadioDefault2.6">My career is okay and learning tech skills is
                         expensive - why should I rock the boat?</label>
                 </div>
-                <button class="btn btn-dark" onclick="nextPage('next4')">NEXT</button>
+                <button class="btn btn-dark" onclick="nextPage('next4')" type="button">NEXT</button>
             </div>
 
             <div id="q4">
@@ -179,7 +179,7 @@
                     <label class="form-check-label" for="RadioDefault3.6">Work at home in the morning, with time for
                         kids' soccer practice in the afternoon. </label>
                 </div>
-                <button class="btn btn-dark" onclick="nextPage('next5')">NEXT</button>
+                <button class="btn btn-dark" onclick="nextPage('next5')" type="button">NEXT</button>
             </div>
 
             <div id="q5">
@@ -188,9 +188,9 @@
                 <p class="text-secondary">(We hope you liked it!)</p>
 
                 <label for="customRange1" class="form-label">1-5</label>
-                <input type="range" class="form-range" id="customRange1">
+                <input type="range" class="form-range" id="customRange1" min="1" max="5" step="1">
 
-                <button class="btn btn-dark" onclick="finalPage()">SUBMIT</button>
+                <button class="btn btn-dark" onclick="finalPage()" type="button">SUBMIT</button>
             </div>
 
             <div class="text-center" id="end">
